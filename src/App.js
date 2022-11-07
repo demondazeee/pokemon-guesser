@@ -17,13 +17,14 @@ function App() {
   const {mode, modeHandler} = useContext(dataCtx)
   return (
     <>
+
       <main className="mx-auto py-6 max-w-2xl">
-        <nav>
+      <nav>
           <ul className="flex gap-2">
-            <li><button href="#" onClick={modeHandler.bind(this,'tallest')}>Tallest Pokemon</button></li>
-            <li><button href="#" onClick={modeHandler.bind(this, 'heaviest')}>Heaviest Pokemon</button></li>
+            <li><button className="border rounded-md bg-blue-500 text-white p-2 hover:bg-blue-400" onClick={modeHandler.bind(this,'tallest')}>Tallest Pokemon</button></li>
+            <li><button className="border rounded-md bg-blue-500 text-white p-2 hover:bg-blue-400" onClick={modeHandler.bind(this, 'heaviest')}>Heaviest Pokemon</button></li>
           </ul>
-        </nav>
+      </nav>
         {mode === 'tallest' && <TallestPokemon />}
         {mode === 'heaviest' && <HeaviestPokemon />}
       </main>
