@@ -4,9 +4,7 @@ import { dataCtx } from "../../store/DataContext"
 const PokemonItem = ({handler, data}) =>{
     const {mode} = useContext(dataCtx)
     const [load, isLoaded] = useState(false)
-    console.log(load)
     const style = load ? "h-40" : {visibility: 'hidden'};
-    // const style = didLoad ? {} : {visibility: 'hidden'};
     return (
         
         <>
