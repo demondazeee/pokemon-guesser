@@ -18,8 +18,6 @@ const TallestPokemon = () =>{
                 </div>
             )
         }
-
-        return <p>Loading</p>
     }
 
     const tallestHandler = (height) => {

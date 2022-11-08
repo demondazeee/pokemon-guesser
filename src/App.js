@@ -18,7 +18,7 @@ function App() {
   return (
     <>
 
-      <main className="mx-auto py-6 max-w-2xl">
+      <main className="mx-auto p-4 max-w-2xl">
       <nav>
           <ul className="flex gap-2">
             <li><button className="border rounded-md bg-blue-500 text-white p-2 hover:bg-blue-400" onClick={modeHandler.bind(this,'tallest')}>Tallest Pokemon</button></li>

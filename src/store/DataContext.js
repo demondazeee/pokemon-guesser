@@ -54,7 +54,7 @@ const DataContext = ({children}) =>{
 
     useEffect(() => {
         loadData()
-    }, [correctAns.val, correctAns.counter])
+    }, [mode, correctAns.val, correctAns.counter])
 
     return (
         <dataCtx.Provider value={{

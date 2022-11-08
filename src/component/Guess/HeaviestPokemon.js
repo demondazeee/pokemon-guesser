@@ -7,7 +7,6 @@ const HeaviestPokemon = () =>{
 
     const heaviestHandler = (weight) => {
         const ans = Math.max(data[0].weight, data[1].weight)
-        console.log(ans)
         correctHandler({
             val: ans === weight ? 1 : 0
         })
@@ -25,7 +24,6 @@ const HeaviestPokemon = () =>{
             )
         }
 
-        return <p>Loading</p>
     }
 
 
